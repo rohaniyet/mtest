@@ -1,220 +1,119 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misharfin – Essence of Royal Elegance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
 
-body {
-  font-family: 'Playfair Display', serif;
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-}
+<body>
 
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('images/hero-bg.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Misharfin Logo" class="logo" />
+      <h1>MISHARFIN</h1>
+      <p class="slogan">Essence of Royal Elegance</p>
+      <p class="pronounce">Pronounced as <strong>Mi–Sha–Feen</strong></p>
+      <a href="#about" class="btn">Discover the Legacy</a>
+    </div>
+  </section>
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
+  <!-- About Misharfin -->
+  <section id="about" class="about">
+    <div class="frame">
+      <h2>About Misharfin</h2>
+      <p>
+        Born from the <strong>Essence of Royal Elegance</strong>, Misharfin stands as a timeless emblem of sophistication, grace, and spiritual depth. 
+        Each fragrance in our <strong>Royal Series</strong> is crafted with a rare blend of art, emotion, and divinity.
+      </p>
+      <p>
+        Misharfin understands the refined preferences of the <strong>Royal Family of the United Kingdom</strong> — the heritage of queens and monarchs whose choices define class and culture. 
+        Inspired by the fragrances they adore, Misharfin has created scents that echo royal charm, grace, and legacy.
+      </p>
+      <p>
+        Beyond luxury, Misharfin carries a <strong>spiritual presence</strong> — every perfume is infused with subtle, soulful energy that connects with hearts and awakens emotions. 
+        The aura it creates makes you <em>iconic</em> — people naturally feel drawn to your presence.
+      </p>
+      <p>
+        Unlike ordinary perfumes crafted only with chemicals, Misharfin blends purity with <strong>spiritual ingredients</strong>, combining nature’s finest essences with divine inspiration — creating not just a fragrance, but an experience that touches the soul.
+      </p>
+      <p>
+        The name itself carries elegance and depth — pronounced <em>“Mi–Sha–Feen”</em> — each syllable flowing like the fragrance it represents, soft, refined, and eternal.
+      </p>
+    </div>
+  </section>
 
-/* Particle Animation */
-.particles::before, .particles::after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(rgba(212,175,55,0.15), transparent 70%);
-  animation: shimmer 12s linear infinite;
-}
+  <!-- Founder Section -->
+  <section id="founder" class="founder">
+    <div class="frame">
+      <h2>Founder & Visionary</h2>
+      <img src="images/founder-waqas.png" alt="Waqas Gilani" class="founder-img">
+      <p>
+        <strong>Syed Waqas Asim</strong>, known as <strong>Waqas Gilani</strong>, is the visionary mind and spiritual force behind <em>Misharfin</em>. 
+        A man of refinement, foresight, and deep understanding — he believes true beauty lies not in appearance, but in <em>purity, intention, and energy</em>.
+      </p>
+      <p>
+        Guided by both intellect and intuition, Waqas Gilani is a connoisseur of excellence who values <em>quality over quantity</em> and <em>soul over material</em>. 
+        His approach to perfumery goes beyond formulation — it’s a form of art that blends human emotion, divine inspiration, and the eternal elegance of royalty.
+      </p>
+      <p>
+        Under his guidance, <strong>Misharfin</strong> has evolved from a perfume line into a living experience — one that embodies balance, presence, and timeless luxury.
+      </p>
+    </div>
+  </section>
 
-@keyframes shimmer {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
+  <!-- Product Series -->
+  <section id="collection" class="products">
+    <h2>Our Royal Series</h2>
+    <div class="product-grid">
+      <div class="product"><img src="images/paris-dream.jpg" alt="Paris Dream"><h3>Paris Dream</h3><p>Romantic elegance inspired by Parisian luxury.</p></div>
+      <div class="product"><img src="images/adventvs.jpg" alt="Adventvs"><h3>Adventvs</h3><p>Power and sophistication for those born to lead.</p></div>
+      <div class="product"><img src="images/oud-wood.jpg" alt="Oud Wood"><h3>Oud Wood</h3><p>Deep, woody perfection — royal and mysterious.</p></div>
+      <div class="product"><img src="images/sanctity-royal.jpg" alt="Sanctity of Royal"><h3>Sanctity of Royal</h3><p>The divine aura of royalty, bottled for the elite.</p></div>
+      <div class="product"><img src="images/imperial-bloom.jpg" alt="Imperial Bloom"><h3>Imperial Bloom</h3><p>Graceful and radiant, celebrating royal femininity.</p></div>
+      <div class="product"><img src="images/velvet-majesty.jpg" alt="Velvet Majesty"><h3>Velvet Majesty</h3><p>Deep, noble essence wrapped in velvet sophistication.</p></div>
+      <div class="product"><img src="images/golden-mirage.jpg" alt="Golden Mirage"><h3>Golden Mirage</h3><p>A shimmering trail of amber and gold, pure luxury.</p></div>
+      <div class="product"><img src="images/regal-whisper.jpg" alt="Regal Whisper"><h3>Regal Whisper</h3><p>Soft yet powerful — royalty’s quiet confidence.</p></div>
+      <div class="product"><img src="images/noir-dynasty.jpg" alt="Noir Dynasty"><h3>Noir Dynasty</h3><p>Dark, bold, and timeless. For kings of the modern world.</p></div>
+      <div class="product"><img src="images/crimson-legacy.jpg" alt="Crimson Legacy"><h3>Crimson Legacy</h3><p>A bold red statement — heritage meets passion.</p></div>
+      <div class="product"><img src="images/amber-crown.jpg" alt="Amber Crown"><h3>Amber Crown</h3><p>Golden comfort and regal charm blended into perfection.</p></div>
+      <div class="product"><img src="images/sapphire-veil.jpg" alt="Sapphire Veil"><h3>Sapphire Veil</h3><p>Deep blue mystery — elegance behind every veil.</p></div>
+    </div>
+  </section>
 
-.hero-content { position: relative; z-index: 2; animation: fadeIn 2s ease-in; }
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="frame">
+      <h2>Whispers of Connection</h2>
+      <p>Reach us for collaborations, wholesale, or bespoke royal blends.</p>
+      <ul>
+        <li>📞 WhatsApp (Pakistan): <a href="https://wa.me/923454680844" target="_blank">+92 345 4680844</a></li>
+        <li>🇬🇧 WhatsApp (UK): <a href="https://wa.me/447721647383" target="_blank">+44 7721 647383</a></li>
+        <li>📧 Email: <a href="mailto:info@misharfin.com">info@misharfin.com</a></li>
+      </ul>
+      <div class="socials">
+        <a href="https://misharfin.com">Website</a> |
+        <a href="https://instagram.com/misharfin">Instagram</a> |
+        <a href="https://facebook.com/MisharfinOfficial">Facebook</a> |
+        <a href="https://tiktok.com/@misharfin.com">TikTok</a> |
+        <a href="https://pinterest.com/misharfin">Pinterest</a> |
+        <a href="https://youtube.com/@misharfin">YouTube</a> |
+        <a href="https://x.com/misharfin">X</a> |
+        <a href="https://linkedin.com/company/Misharfin">LinkedIn</a> |
+        <a href="https://snapchat.com/add/misharfin">Snapchat</a> |
+        <a href="https://t.me/misharfin">Telegram</a>
+      </div>
+    </div>
+  </section>
 
-.logo { width: 120px; margin-bottom: 10px; }
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MISHARFIN — Essence of Royal Elegance | by <a href="https://facebook.com/rohaniyet" target="_blank">Waqas Gilani</a></p>
+  </footer>
 
-.hero h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 5rem;
-  letter-spacing: 3px;
-  color: #d4af37;
-  text-shadow: 0 0 25px rgba(212,175,55,0.5);
-  animation: goldGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes goldGlow {
-  from { text-shadow: 0 0 10px #d4af37; }
-  to { text-shadow: 0 0 30px #ffefb0; }
-}
-
-.slogan {
-  color: #e5c97a;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.pronounce {
-  color: #c9c9c9;
-  font-size: 0.9rem;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: linear-gradient(90deg, #d4af37, #b8932b);
-  color: #000;
-  padding: 12px 35px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover { background: #fff; }
-
-/* About + Founder Section */
-.about, .founder, .contact {
-  background: radial-gradient(circle at top, #111, #000);
-  padding: 100px 25px;
-  text-align: center;
-  position: relative;
-}
-
-.frame {
-  border: 2px solid #d4af37;
-  padding: 40px 25px;
-  max-width: 900px;
-  margin: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(212,175,55,0.3);
-}
-
-.about h2, .founder h2, .contact h2 {
-  font-family: 'Cinzel', serif;
-  color: #d4af37;
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-}
-
-.about p, .founder p, .contact p {
-  color: #ddd;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-}
-
-.founder-img {
-  width: 180px;
-  border-radius: 50%;
-  border: 3px solid #d4af37;
-  margin: 20px 0;
-  box-shadow: 0 0 25px rgba(212,175,55,0.4);
-}
-
-/* Products */
-.products {
-  padding: 80px 25px;
-  text-align: center;
-  background: #0a0a0a;
-}
-
-.products h2 {
-  color: #d4af37;
-  font-family: 'Cinzel', serif;
-  font-size: 2.8rem;
-  margin-bottom: 50px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.product {
-  background: linear-gradient(145deg, #111, #1a1a1a);
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 20px;
-  transition: 0.4s;
-  box-shadow: 0 0 10px rgba(212,175,55,0.15);
-}
-
-.product:hover {
-  transform: translateY(-8px);
-  border-color: #d4af37;
-  box-shadow: 0 0 25px rgba(212,175,55,0.25);
-}
-
-.product img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
-
-.product h3 { color: #d4af37; font-family: 'Cinzel', serif; font-size: 1.3rem; margin-bottom: 10px; }
-.product p { color: #bbb; font-size: 0.95rem; }
-
-/* Contact */
-.contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-.contact li {
-  color: #ccc;
-  margin: 8px 0;
-}
-.contact a {
-  color: #d4af37;
-  text-decoration: none;
-}
-.contact a:hover { color: #fff; }
-.socials a {
-  color: #d4af37;
-  margin: 0 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.socials a:hover { color: #fff; }
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background: #000;
-  color: #888;
-  font-size: 0.9rem;
-  border-top: 1px solid #333;
-}
-
-footer .socials a {
-  color: #d4af37;
-  text-decoration: none;
-  margin: 0 8px;
-  transition: 0.3s;
-}
-
-footer .socials a:hover { color: #fff; }
-footer a { color: #d4af37; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-
-/* Animations */
-@keyframes fadeIn { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 3rem; }
-  .slogan { font-size: 1.2rem; }
-  .btn { padding: 10px 25px; }
-  .product-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-}
+</body>
+</html>
